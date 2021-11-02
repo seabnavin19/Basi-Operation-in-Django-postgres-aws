@@ -1,0 +1,12 @@
+{% extends "sell_house/main.html" %}
+{% block content%}
+<form action="" method="post">
+    
+    
+{%csrf_token %}
+{{form}}
+<button type="submit" > Create </button>
+
+</form>
+
+{% endblock %}

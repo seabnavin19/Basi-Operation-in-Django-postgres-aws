@@ -1,0 +1,12 @@
+{% extends "sell_house/main.html" %}
+{% block content%}
+<p>Login</p>
+<form action="" method="POST">
+    {%csrf_token %}
+    <input type="text" name="username">
+<input type="password", name="password">
+<button type="submit" name="" id="">Submit</button>
+</form>
+
+
+{% endblock %}

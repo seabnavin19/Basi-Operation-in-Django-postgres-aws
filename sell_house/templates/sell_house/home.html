@@ -1,0 +1,17 @@
+{% extends "sell_house/main.html" %}
+{% block content%}
+{%for post in posts%}
+<button><a href="{% url 'logout' %}">Logout</a></button>
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title">{{post.House}}</h5>
+    <p class="card-text">{{post.User}}</p>
+    <p class="card-text">Price: 4000$</p>
+  <a href="{% url 'sell' post.id %}" class="btn btn-primary">Detail</a>
+  <a href="{% url 'delete' post.id %}" class="btn btn-danger">Delete</a>
+  </div>
+</div>
+{%endfor%}
+{% endblock content%}

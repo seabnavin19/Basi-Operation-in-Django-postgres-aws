@@ -1,0 +1,24 @@
+{% extends "sell_house/main.html" %}
+{% block content%}
+
+<form action="" method="POST">
+    
+    
+    {%csrf_token %}
+    {{userForm.username.label}}
+    {{userForm.username}}
+
+    {{userForm.email.label}}
+    {{userForm.email}}
+
+    {{userForm.pasasword1.label}}
+    {{userForm.password1}}
+
+    {{userForm.pasasword2.label}}
+    {{userForm.password2}}
+    {{userform.erorr}}
+    <button type="submit" > Create </button>
+
+
+   
+{% endblock content%}
